@@ -6,7 +6,8 @@ class AuthMiddleware(MiddlewareMixin):
     def process_request(self,request):
         #排除不需要登陆的url
         #request.path_info 获取当前用户请求的URL
-        if request.path_info == '/api/login_v1/' or request.path_info == '/api/login_v2/' or request.path_info == '/api/add_v1/' or request.path_info == '/api/add_v2/' or request.path_info == '/api/logout/':
+        url_list = ['/api/login/', '/api/login_v1/' , '/api/login_v2/' ,'/api/add_v1/', '/api/add_v2/' ,'/api/logout/']
+        if request.path_info in url_list:
             return
         #获取session中信息
         session_data = request.session.get('info')
