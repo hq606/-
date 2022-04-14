@@ -19,8 +19,9 @@ from api import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     #path('api/', views.add_user),
-    path('api/login_v1/', views.login_v1),#学生登陆接口
-    path('api/login_v2/', views.login_v2),#教师登陆接口
+    path('api/login/', views.login),#学生登陆接口
+    # path('api/login_v1/', views.login_v1),#学生登陆接口
+    # path('api/login_v2/', views.login_v2),#教师登陆接口
     path('api/add_v1/', views.add_student),#注册学生接口
     path('api/add_v2/', views.add_teacher),#注册教书接口
     path('api/list_v1/', views.list_v1),#学生列表

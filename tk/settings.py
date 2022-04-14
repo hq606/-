@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'tk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
-        'NAME': 'xxx',  # 数据库名，先前创建的
-        'USER': 'xxx',     # 用户名，可以自己创建用户
-        'PASSWORD': 'xxx',  # 密码
-        'HOST': 'xxx',  # mysql服务所在的主机ip
+        'NAME': 'demo',  # 数据库名，先前创建的
+        'USER': 'zzx',     # 用户名，可以自己创建用户
+        'PASSWORD': 'ctDm54aM7pFBb3i8',  # 密码
+        'HOST': '124.71.182.33',  # mysql服务所在的主机ip
         'PORT': '3306',         # mysql服务端口
     }
 }
